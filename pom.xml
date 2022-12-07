@@ -10,12 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>days/day1</module>
-        <module>days/day2</module>
-        <module>days/day3</module>
-        <module>days/day4</module>
-        <module>days/day5</module>
-        <module>days/day6</module>
+        <module>days/Day1</module>
+        <module>days/Day2</module>
+        <module>days/Day3</module>
+        <module>days/Day4</module>
+        <module>days/Day5</module>
+        <module>days/Day6</module>
     </modules>
 
     <properties>
