@@ -40,7 +40,7 @@ class Day6Test {
     @Test
     void testPart2WithExample() throws IOException {
         // This uses the same data as part 1
-        final var input = Files.lines(Path.of("src/test/resources/part1.example.input"));
+        final var input = Files.readAllLines(Path.of("src/test/resources/part1.example.input"));
 
         input.forEach(line -> {
             final var testInput = line.split(" ");

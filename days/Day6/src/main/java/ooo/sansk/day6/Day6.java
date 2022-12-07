@@ -8,6 +8,7 @@ public class Day6 {
         private final T[] items;
         private int pointer;
 
+        @SuppressWarnings("unchecked")
         public CircularBuffer(Class<T> clazz, int size) {
             this.items = (T[]) Array.newInstance(clazz, size);
             this.pointer = 0;
