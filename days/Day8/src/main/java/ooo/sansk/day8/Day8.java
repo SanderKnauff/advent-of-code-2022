@@ -43,6 +43,9 @@ public class Day8 {
                 break;
             }
         }
+        if (northVisible) {
+            return true;
+        }
 
         var southVisible = true;
         for (int x = xPos + 1; x < grid.length; x++) {
@@ -51,6 +54,9 @@ public class Day8 {
                 southVisible = false;
                 break;
             }
+        }
+        if (southVisible) {
+            return true;
         }
 
         var eastVisible = true;
@@ -61,6 +67,9 @@ public class Day8 {
                 break;
             }
         }
+        if (eastVisible) {
+            return true;
+        }
 
         var westVisible = true;
         for (int y = yPos + 1; y < grid[xPos].length; y++) {
@@ -70,8 +79,11 @@ public class Day8 {
                 break;
             }
         }
+        if (westVisible) {
+            return true;
+        }
 
-        return northVisible || eastVisible || southVisible || westVisible;
+        return false;
     }
 
     private int findHighestScenicScore(int[][] grid) {
