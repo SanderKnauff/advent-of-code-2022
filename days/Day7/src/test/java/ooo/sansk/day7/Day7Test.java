@@ -49,8 +49,8 @@ class Day7Test {
         // This uses the same data as part 1
         final var input = Files.readString(Path.of("src/test/resources/part1.input"));
 
-        final var messageStart = subject.part2(input);
+        final var size = subject.part2(input);
 
-        System.out.printf("The biggest directory that would free up enough space has a size of %d%n", messageStart);
+        System.out.printf("The biggest directory that would free up enough space has a size of %d%n", size);
     }
 }
